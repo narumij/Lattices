@@ -1,0 +1,4 @@
+   <node id="__NODE_ID__">
+    <matrix>__MATRIX__</matrix>
+    __CONTENTS__
+   </node>

@@ -1,0 +1,57 @@
+
+/* Class = "UITableViewController"; title = "CIF Files"; ObjectID = "0D0-KN-8JW"; */
+"0D0-KN-8JW.title" = "CIF Files";
+
+/* Class = "UILabel"; text = "000pm"; ObjectID = "1Ol-Ad-IrJ"; */
+"1Ol-Ad-IrJ.text" = "000pm";
+
+/* Class = "UIButton"; normalTitle = "ダミー購入"; ObjectID = "6A7-NU-VGq"; */
+"6A7-NU-VGq.normalTitle" = "ダミー購入";
+
+/* Class = "UILabel"; text = "操作ヒント画面（仮）"; ObjectID = "B7U-j7-8bl"; */
+"B7U-j7-8bl.text" = "操作ヒント画面（仮）";
+
+/* Class = "UILabel"; text = "Radii"; ObjectID = "Csm-qy-kar"; */
+"Csm-qy-kar.text" = "Radii";
+
+/* Class = "UILabel"; text = "Color"; ObjectID = "GrR-cz-Dk2"; */
+"GrR-cz-Dk2.text" = "Color";
+
+/* Class = "UILabel"; text = "Radii Size"; ObjectID = "INm-aj-CNN"; */
+"INm-aj-CNN.text" = "Radii Size";
+
+/* Class = "UILabel"; text = "Covalent Radii"; ObjectID = "KvY-o9-xA6"; */
+"KvY-o9-xA6.text" = "Covalent Radii";
+
+/* Class = "UILabel"; text = "100%"; ObjectID = "L1G-Qa-dAm"; */
+"L1G-Qa-dAm.text" = "100%";
+
+/* Class = "UILabel"; text = "100%"; ObjectID = "O0l-Gs-WTC"; */
+"O0l-Gs-WTC.text" = "100%";
+
+/* Class = "UITableViewController"; title = "Radii Set"; ObjectID = "evI-dU-TdH"; */
+"evI-dU-TdH.title" = "Radii Set";
+
+/* Class = "UILabel"; text = "Bond Dia"; ObjectID = "f8d-cB-j4H"; */
+"f8d-cB-j4H.text" = "Bond Dia";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "o83-3h-h9Y"; */
+"o83-3h-h9Y.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Radii Set"; ObjectID = "p03-Wo-HkX"; */
+"p03-Wo-HkX.title" = "Radii Set";
+
+/* Class = "UILabel"; text = "CPK"; ObjectID = "pSk-6P-gLJ"; */
+"pSk-6P-gLJ.text" = "CPK";
+
+/* Class = "UILabel"; text = "Ion Radii"; ObjectID = "pTK-xa-eMl"; */
+"pTK-xa-eMl.text" = "Ion Radii";
+
+/* Class = "UILabel"; text = "Calculated Atomic Radii"; ObjectID = "tfJ-j0-qg4"; */
+"tfJ-j0-qg4.text" = "Calculated Atomic Radii";
+
+/* Class = "UILabel"; text = "Van-der-waals Radii"; ObjectID = "vYn-dn-tRg"; */
+"vYn-dn-tRg.text" = "Van-der-waals Radii";
+
+/* Class = "UILabel"; text = "Types"; ObjectID = "ws3-Q5-I9B"; */
+"ws3-Q5-I9B.text" = "Types";

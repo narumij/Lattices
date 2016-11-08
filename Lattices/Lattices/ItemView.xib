@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemView" customModule="Lattices" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicatorView" destination="6zd-69-rbD" id="3FR-I7-Tif"/>
+                <outlet property="button" destination="JI4-Az-rrP" id="Xly-AS-Mip"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Eum-AU-lQg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuideView" customModule="Lattices" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="207" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI4-Az-rrP">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="E2E-qE-Uiq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.34901960784313724" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="6zd-69-rbD">
+                    <color key="color" red="0.34901960784313724" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="0.59366918103448274" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JI4-Az-rrP" secondAttribute="trailing" constant="8" id="Kju-iq-LEn"/>
+                <constraint firstItem="JI4-Az-rrP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P2s-Ye-dF7"/>
+                <constraint firstAttribute="bottom" secondItem="JI4-Az-rrP" secondAttribute="bottom" id="evx-sf-QmV"/>
+                <constraint firstItem="6zd-69-rbD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="o9k-h6-6pg"/>
+                <constraint firstAttribute="trailing" secondItem="6zd-69-rbD" secondAttribute="trailing" constant="2" id="r26-hn-7sE"/>
+                <constraint firstItem="JI4-Az-rrP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="tum-kK-YGe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="317.5" y="87"/>
+        </view>
+    </objects>
+</document>

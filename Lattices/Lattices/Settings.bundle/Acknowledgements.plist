@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Acknowledgements</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Ttile</key>
+			<string>Acknowledgements</string>
+			<key>FooterText</key>
+			<string>zenithgear Inc.をここまで支えてくださったみなさまに、心より感謝いたします。
+
+高エネルギー加速器研究機構物質構造化学研究所
+教授 神山 崇 様
+高エネルギー加速器研究機構物質構造化学研究所
+石川 喜久 様
+
+お二方には、本アプリを作成するにあたり、丁寧かつ熱心なご指導を賜りました。また、本アプリはお二方の協力、支援、議論なしには存在しえませんでした。感謝の念に堪えません。
+
+デザイナー 岡本 知久 様
+
+本アプリ以外にも、数年デザイン面で支えていただきました。感謝の念に堪えません。また、岡本氏を引き合わせてくださった、枡村貴史氏にも感謝いたします。
+
+HMDT株式会社 木下 誠 様
+
+iOSプログラミング及びSwift言語について氏の知見は、とても参考になりました。感謝いたします。
+
+東 知憲 様
+
+氏はフライフィッシングのエキスパートでありながら、何故かプログラミングの道へふたたび向かうキッカケを与えていただきました。それがあって、本アプリへとたどり着くことができました。感謝いたします。
+
+山上 敦司 様
+
+本アプリ以前のiOSアプリへの取り組みで、氏の熱心なテストと議論があって、今日があります。感謝いたします。
+
+Acknowledgements
+
+Portion of this software may be utilize the following copyrighted material, the use of which is hereby acknowledged:
+
+Takashi Kamiyama Ph.D - (13MEMS.CIF)
+
+Free Software Foundation, Inc. - (GNU flex)
+Copyright © Free Software Foundation, Inc.
+GNU flex is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either versions 2, or (at your option) any later version.
+GNU flex is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+2016年8月3日
+</string>
+		</dict>
+	</array>
+</dict>
+</plist>

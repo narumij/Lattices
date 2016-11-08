@@ -1,0 +1,21 @@
+  <geometry id="__GEOMETRY_ID__">
+   <mesh>
+    <source id="__GEOMETRY_SOURCE_ID__">
+     <float_array id="__FLOAT_ARRAY_ID__" count="__FLOAT_COUNT__">__FLOAT_ARRAY__</float_array>
+     <technique_common>
+      <accessor source="#__FLOAT_ARRAY_ID__" count="__VERTEX_COUNT__" stride="3">
+       <param name="X" type="float"/>
+       <param name="Y" type="float"/>
+       <param name="Z" type="float"/>
+      </accessor>
+     </technique_common>
+    </source>
+    <vertices id="__VERTICES_ID__">
+     <input semantic="POSITION" source="#__GEOMETRY_SOURCE_ID__"/>
+    </vertices>
+    <lines count="__LINE_COUNT__" material="__MATERIAL_SYMBOL__">
+     <input semantic="VERTEX" offset="0" source="#__VERTICES_ID__"/>
+     <p>__INDEX_ARRAY__</p>
+    </lines>
+   </mesh>
+  </geometry>

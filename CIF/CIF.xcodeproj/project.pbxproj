@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF1E1B6E1CF52C43002A3E0D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B6D1CF52C43002A3E0D /* main.swift */; };
+		BF1E1B751CF52C6A002A3E0D /* CIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B741CF52C6A002A3E0D /* CIF.swift */; };
+		BF1E1B7A1CF52C89002A3E0D /* CIFLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B771CF52C89002A3E0D /* CIFLexer.m */; };
+		BF1E1B7B1CF52C89002A3E0D /* lex.cif.c in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B781CF52C89002A3E0D /* lex.cif.c */; };
+		BF1E1B841CF5334F002A3E0D /* CIFLexer.l in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B831CF5334F002A3E0D /* CIFLexer.l */; };
+		BF1E1B961CF584C5002A3E0D /* CIFParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E1B951CF584C5002A3E0D /* CIFParser.swift */; };
+		BFC6BFEB1D4B0CEF00212A51 /* FloatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6BFEA1D4B0CEF00212A51 /* FloatType.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF1E1B891CF533BE002A3E0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF1E1B851CF533B6002A3E0D /* CIFLexer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1E1B551CF511FA002A3E0D;
+			remoteInfo = CIFLexer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF1E1B681CF52C43002A3E0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BF1E1B6A1CF52C43002A3E0D /* CIF */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CIF; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1E1B6D1CF52C43002A3E0D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BF1E1B741CF52C6A002A3E0D /* CIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIF.swift; sourceTree = "<group>"; };
+		BF1E1B761CF52C89002A3E0D /* CIFLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIFLexer.h; path = /Users/jun/Lattices/CIFLexer/CIFLexer.h; sourceTree = "<absolute>"; };
+		BF1E1B771CF52C89002A3E0D /* CIFLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CIFLexer.m; path = /Users/jun/Lattices/CIFLexer/CIFLexer.m; sourceTree = "<absolute>"; };
+		BF1E1B781CF52C89002A3E0D /* lex.cif.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lex.cif.c; path = /Users/jun/Lattices/CIFLexer/lex.cif.c; sourceTree = "<absolute>"; };
+		BF1E1B791CF52C89002A3E0D /* lex.cif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lex.cif.h; path = /Users/jun/Lattices/CIFLexer/lex.cif.h; sourceTree = "<absolute>"; };
+		BF1E1B7E1CF52D23002A3E0D /* CIF-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CIF-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF1E1B831CF5334F002A3E0D /* CIFLexer.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; name = CIFLexer.l; path = ../CIFLexer/CIFLexer.l; sourceTree = "<group>"; };
+		BF1E1B851CF533B6002A3E0D /* CIFLexer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CIFLexer.xcodeproj; path = ../CIFLexer/CIFLexer.xcodeproj; sourceTree = "<group>"; };
+		BF1E1B951CF584C5002A3E0D /* CIFParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIFParser.swift; sourceTree = "<group>"; };
+		BFC6BFEA1D4B0CEF00212A51 /* FloatType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatType.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF1E1B671CF52C43002A3E0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF1E1B611CF52C43002A3E0D = {
+			isa = PBXGroup;
+			children = (
+				BF1E1B851CF533B6002A3E0D /* CIFLexer.xcodeproj */,
+				BF1E1B7E1CF52D23002A3E0D /* CIF-Bridging-Header.h */,
+				BF1E1B7C1CF52C9C002A3E0D /* Lexer */,
+				BF1E1B6C1CF52C43002A3E0D /* CIF */,
+				BF1E1B6B1CF52C43002A3E0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF1E1B6B1CF52C43002A3E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E1B6A1CF52C43002A3E0D /* CIF */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF1E1B6C1CF52C43002A3E0D /* CIF */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E1B741CF52C6A002A3E0D /* CIF.swift */,
+				BF1E1B951CF584C5002A3E0D /* CIFParser.swift */,
+				BF1E1B6D1CF52C43002A3E0D /* main.swift */,
+				BFC6BFEA1D4B0CEF00212A51 /* FloatType.swift */,
+			);
+			path = CIF;
+			sourceTree = "<group>";
+		};
+		BF1E1B7C1CF52C9C002A3E0D /* Lexer */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E1B761CF52C89002A3E0D /* CIFLexer.h */,
+				BF1E1B771CF52C89002A3E0D /* CIFLexer.m */,
+				BF1E1B831CF5334F002A3E0D /* CIFLexer.l */,
+				BF1E1B791CF52C89002A3E0D /* lex.cif.h */,
+				BF1E1B781CF52C89002A3E0D /* lex.cif.c */,
+			);
+			name = Lexer;
+			sourceTree = "<group>";
+		};
+		BF1E1B861CF533B6002A3E0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF1E1B691CF52C43002A3E0D /* CIF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF1E1B711CF52C43002A3E0D /* Build configuration list for PBXNativeTarget "CIF" */;
+			buildPhases = (
+				BF1E1B661CF52C43002A3E0D /* Sources */,
+				BF1E1B671CF52C43002A3E0D /* Frameworks */,
+				BF1E1B681CF52C43002A3E0D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF1E1B8A1CF533BE002A3E0D /* PBXTargetDependency */,
+			);
+			name = CIF;
+			productName = CIF;
+			productReference = BF1E1B6A1CF52C43002A3E0D /* CIF */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF1E1B621CF52C43002A3E0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zenithgear;
+				TargetAttributes = {
+					BF1E1B691CF52C43002A3E0D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BF1E1B651CF52C43002A3E0D /* Build configuration list for PBXProject "CIF" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF1E1B611CF52C43002A3E0D;
+			productRefGroup = BF1E1B6B1CF52C43002A3E0D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BF1E1B861CF533B6002A3E0D /* Products */;
+					ProjectRef = BF1E1B851CF533B6002A3E0D /* CIFLexer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BF1E1B691CF52C43002A3E0D /* CIF */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF1E1B661CF52C43002A3E0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1E1B751CF52C6A002A3E0D /* CIF.swift in Sources */,
+				BF1E1B841CF5334F002A3E0D /* CIFLexer.l in Sources */,
+				BF1E1B7A1CF52C89002A3E0D /* CIFLexer.m in Sources */,
+				BF1E1B6E1CF52C43002A3E0D /* main.swift in Sources */,
+				BF1E1B7B1CF52C89002A3E0D /* lex.cif.c in Sources */,
+				BFC6BFEB1D4B0CEF00212A51 /* FloatType.swift in Sources */,
+				BF1E1B961CF584C5002A3E0D /* CIFParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF1E1B8A1CF533BE002A3E0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CIFLexer;
+			targetProxy = BF1E1B891CF533BE002A3E0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF1E1B6F1CF52C43002A3E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "CIF-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF1E1B701CF52C43002A3E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "CIF-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BF1E1B721CF52C43002A3E0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF1E1B731CF52C43002A3E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF1E1B651CF52C43002A3E0D /* Build configuration list for PBXProject "CIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1E1B6F1CF52C43002A3E0D /* Debug */,
+				BF1E1B701CF52C43002A3E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF1E1B711CF52C43002A3E0D /* Build configuration list for PBXNativeTarget "CIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF1E1B721CF52C43002A3E0D /* Debug */,
+				BF1E1B731CF52C43002A3E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF1E1B621CF52C43002A3E0D /* Project object */;
+}

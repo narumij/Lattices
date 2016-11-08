@@ -1,0 +1,16 @@
+/* 
+  DocumentBrowserController.strings
+  SwiftCrystal
+
+  Created by Jun Narumi on 2016/09/18.
+  Copyright © 2016年 zenithgear. All rights reserved.
+*/
+
+"cloudDisabledAlertTitle" = "iCloudが停止中です";
+
+"cloudDisabledAlertMessage" = "当アプリご利用のため、設定でのiCloud Drive有効化をお願いいたします。";
+
+"cloudDisabledAlertDismiss" = "閉じる";
+
+"My Favorite Crystals" = "My Favorite Crystals";
+

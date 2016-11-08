@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  SwiftCrystal
+
+  Created by Jun Narumi on 2016/09/18.
+  Copyright © 2016年 zenithgear. All rights reserved.
+*/
+
+CFBundleDisplayName = "Hoge";

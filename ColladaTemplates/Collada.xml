@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+ <asset>
+  <contributor>
+   <authoring_tool>SwiftCrystal</authoring_tool>
+  </contributor>
+  <created>__DATE__</created>
+  <modified>__DATE__</modified>
+  <up_axis>Y_UP</up_axis>
+ </asset>
+ <library_materials>
+     __MATERIALS__
+ </library_materials>
+ <library_effects>
+     __EFFECTS__
+  </library_effects>
+ <library_geometries>
+     __GEOMETRIES__
+ </library_geometries>
+ <library_visual_scenes>
+  <visual_scene id="crystal">
+      __NODE_TREE__
+  </visual_scene>
+ </library_visual_scenes>
+ <scene>
+  <instance_visual_scene url="#crystal"/>
+ </scene>
+</COLLADA>
+

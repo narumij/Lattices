@@ -1,0 +1,16 @@
+/* 
+  DocumentBrowserController.strings
+  SwiftCrystal
+
+  Created by Jun Narumi on 2016/09/18.
+  Copyright © 2016年 zenithgear. All rights reserved.
+*/
+
+"cloudDisabledAlertTitle" = "iCloud is disabled";
+
+"cloudDisabledAlertMessage" = "Please enable iCloud Drive in Settings to use this app";
+
+"cloudDisabledAlertDismiss" = "Dismiss";
+
+"My Favorite Crystals" = "My Favorite Crystals";
+

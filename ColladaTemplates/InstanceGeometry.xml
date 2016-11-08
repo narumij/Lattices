@@ -1,0 +1,7 @@
+     <instance_geometry url="#__GEOMETRY_ID__">
+      <bind_material>
+       <technique_common>
+        <instance_material symbol="__MATERIAL_SYMBOL__" target="#__MATRIAL_ID__"/>
+       </technique_common>
+      </bind_material>
+     </instance_geometry>
