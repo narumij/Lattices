@@ -62,9 +62,10 @@ class Document: UIDocument {
     var fileAttributes: [AnyHashable: Any] = [:]
 
     override func fileAttributesToWrite(to url: URL, for saveOperation: UIDocumentSaveOperation) throws -> [AnyHashable: Any] {
+
         if loadSuccess == true {
             writePersist()
-            saveThumnail()
+//            saveThumnail()
         }
 
         let aspectRatio = 220.0 / 270.0
@@ -181,7 +182,9 @@ class Document: UIDocument {
                 return NSDictionary(dictionary: dictionaryRepresentation( from: $0 ) )
             }) as AnyObject
         }
+
         persist["latticeHidden"] = crystal.latticeHidden as AnyObject?
+
         if let dataPath = Document.dataPath(fileURL) {
             prepareDataDirectory()
 //            let result = NSKeyedArchiver.archiveRootObject( persist, toFile: dataPath )

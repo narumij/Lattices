@@ -302,11 +302,6 @@ class ThumbnailCache {
             return existingImage
         }
 
-        // MARK: 迂回部分
-        if let hogeImage = Document.thumbnailOrNil( name: URL.lastPathComponent ) {
-            return hogeImage
-        }
-
         // Use a placeholder image if one hasn't been loaded yet.
         let loadedThumbnail = existingImage ?? UIImage(named: "MissingThumbnail.png")!
 

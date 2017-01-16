@@ -57,38 +57,6 @@ extension CrystalCell_t {
         #endif
     }
 
-    fileprivate var matrix4x4_drawxlt : Matrix4x4 {
-        let m3 = matrix3x3_drawxlt
-        var m4 = Matrix4x4Identity
-        for i in 0..<3 {
-            for j in 0..<3 {
-                m4[i,j] = m3[i,j]
-            }
-        }
-        return m4
-    }
-
-    fileprivate var matrix3x3_drawxlt : Matrix3x3 {
-        let lat_con : [FloatType] = [ a, b, c ]
-        var b_mat = Matrix3x3(0.0)
-        b_mat[0][0] = 1.0;
-        let csal = cos(alpha);
-        let csbe = cos(beta);
-        let csga = cos(gamma);
-        let snga = sin(gamma);
-        b_mat[0,1] = csga;
-        b_mat[1,1] = snga;
-        b_mat[0,2] = csbe;
-        b_mat[1,2] = (csal - csbe * csga) / snga
-        b_mat[2,2] = sqrt ( 1.0 - b_mat[0,2] * b_mat[0,2] - b_mat[1,2] * b_mat[1,2] )
-        for i in 0...2 {
-            for j in 0...2 {
-                b_mat[j][i] *= lat_con[i];
-            }
-        }
-        return b_mat;
-    }
-
     func toCartn( fract: Vector3 ) -> Vector3 {
         return (matrix4x4 * vector4( fract, 1 ) ).xyz
     }
