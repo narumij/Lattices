@@ -187,8 +187,8 @@ class Document: UIDocument {
 
         if let dataPath = Document.dataPath(fileURL) {
             prepareDataDirectory()
-//            let result = NSKeyedArchiver.archiveRootObject( persist, toFile: dataPath )
-//            debugPrint("save result : \(result) \(persist)")
+            let result = NSKeyedArchiver.archiveRootObject( persist, toFile: dataPath )
+            debugPrint("save result : \(result) \(persist)")
             debugPrint("save date   : \(NSDate())")
         }
     }
