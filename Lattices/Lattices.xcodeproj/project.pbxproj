@@ -77,12 +77,9 @@
 		BF904CDF1D8C92FD003A571C /* AppDelegate+DocumentBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF904CDD1D8C92DC003A571C /* AppDelegate+DocumentBrowserController.swift */; };
 		BF904CE21D8CA19A003A571C /* DummyModelObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF904CE01D8CA146003A571C /* DummyModelObject.swift */; };
 		BF9A71DD1D0C6F7A0009ABD5 /* Etc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A71D91D0C6F6B0009ABD5 /* Etc.swift */; };
-		BF9A71E41D0C819B0009ABD5 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9A71E11D0C818D0009ABD5 /* NSString+MD5.m */; };
-		BF9A71E71D0C82120009ABD5 /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9A71E61D0C82120009ABD5 /* NSData+MD5.m */; };
 		BF9A721F1D0D99C20009ABD5 /* SaveRecieveURLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9A721D1D0D99C20009ABD5 /* SaveRecieveURLViewController.swift */; };
 		BF9ACC221DD19024007A60E0 /* StartUP_Screen_iPhone_Vartical_1242_2208_v3.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9ACC211DD19024007A60E0 /* StartUP_Screen_iPhone_Vartical_1242_2208_v3.png */; };
 		BF9CCD611D60DC3600D473D4 /* CrystalEllipsoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CCD5F1D60DC2700D473D4 /* CrystalEllipsoid.swift */; };
-		BF9CCD651D60EB0600D473D4 /* Float3x3Eigen.c in Sources */ = {isa = PBXBuildFile; fileRef = BF9CCD621D60EB0600D473D4 /* Float3x3Eigen.c */; };
 		BF9CCD681D60F3BE00D473D4 /* Probability.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CCD661D60F3BE00D473D4 /* Probability.swift */; };
 		BF9CCD6B1D62B77900D473D4 /* CIFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9CCD691D62B77900D473D4 /* CIFConstants.swift */; };
 		BFA7E0B81D6FDF8B00416B6C /* PrimeBonding.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC7F86E1D6C450700BF3BEB /* PrimeBonding.swift */; };
@@ -90,6 +87,7 @@
 		BFA7E0C61D6FF71C00416B6C /* SiteSymmetryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA7E0C41D6FF70900416B6C /* SiteSymmetryCode.swift */; };
 		BFA7E0C91D6FF81400416B6C /* BoolVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8570BB1D6B5096007C5C07 /* BoolVector.swift */; };
 		BFB1A8C01D0C40FC0087B33B /* TimerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB1A8BF1D0C40FC0087B33B /* TimerTarget.swift */; };
+		BFB8DE7A1E36503100553F48 /* Eigen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A9C4E1D6733B500FB0F57 /* Eigen.swift */; };
 		BFBAEB0E1D832620000C4AF2 /* LatticeCoord.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD193E1D7C51140091DBFF /* LatticeCoord.swift */; };
 		BFBAEB0F1D83262C000C4AF2 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD19171D7C1F860091DBFF /* Vector.swift */; };
 		BFBAEB101D832652000C4AF2 /* Standard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD19261D7C21D60091DBFF /* Standard.swift */; };
@@ -139,7 +137,6 @@
 		BFBC40421D063A4B0030A839 /* SymmetryOperationsQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE8638D1CFBC85E00C58F11 /* SymmetryOperationsQuery.swift */; };
 		BFBC40431D063A4B0030A839 /* Expire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA645AC1CF81F73005569FB /* Expire.swift */; };
 		BFBC40451D063A4B0030A839 /* AxisSceneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7FF63C1D02AC4400245921 /* AxisSceneController.swift */; };
-		BFBC40471D063A5D0030A839 /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8821431CFEB3250015AFC7 /* TimeStamp.m */; };
 		BFBC40531D063CB40030A839 /* CIFLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0B27B81CF7D69600A20165 /* CIFLexer.m */; };
 		BFBC40541D063CB40030A839 /* lex.cif.c in Sources */ = {isa = PBXBuildFile; fileRef = BF0B27B91CF7D69600A20165 /* lex.cif.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		BFBC40551D063CB40030A839 /* CIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0B27C11CF7D6AC00A20165 /* CIF.swift */; };
@@ -374,8 +371,6 @@
 		BF9A721D1D0D99C20009ABD5 /* SaveRecieveURLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRecieveURLViewController.swift; sourceTree = "<group>"; };
 		BF9ACC211DD19024007A60E0 /* StartUP_Screen_iPhone_Vartical_1242_2208_v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartUP_Screen_iPhone_Vartical_1242_2208_v3.png; sourceTree = "<group>"; };
 		BF9CCD5F1D60DC2700D473D4 /* CrystalEllipsoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrystalEllipsoid.swift; sourceTree = "<group>"; };
-		BF9CCD621D60EB0600D473D4 /* Float3x3Eigen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Float3x3Eigen.c; sourceTree = "<group>"; };
-		BF9CCD631D60EB0600D473D4 /* Float3x3Eigen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Float3x3Eigen.h; sourceTree = "<group>"; };
 		BF9CCD661D60F3BE00D473D4 /* Probability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Probability.swift; sourceTree = "<group>"; };
 		BF9CCD691D62B77900D473D4 /* CIFConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIFConstants.swift; sourceTree = "<group>"; };
 		BFA645AC1CF81F73005569FB /* Expire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expire.swift; sourceTree = "<group>"; };
@@ -549,8 +544,6 @@
 				BF9A71E11D0C818D0009ABD5 /* NSString+MD5.m */,
 				BF9A71E51D0C82120009ABD5 /* NSData+MD5.h */,
 				BF9A71E61D0C82120009ABD5 /* NSData+MD5.m */,
-				BF9CCD631D60EB0600D473D4 /* Float3x3Eigen.h */,
-				BF9CCD621D60EB0600D473D4 /* Float3x3Eigen.c */,
 			);
 			name = Objc;
 			path = ../Sources/Objc;
@@ -1285,8 +1278,8 @@
 				BFDF9C2F1D0B9A7800A17F02 /* UIColor+Lattices.swift in Sources */,
 				BF8570C31D6C1B80007C5C07 /* PublFlag.swift in Sources */,
 				BF904CAD1D8BF7E1003A571C /* DocumentBrowserQuery.swift in Sources */,
-				BF9CCD651D60EB0600D473D4 /* Float3x3Eigen.c in Sources */,
 				BFBD19311D7C28050091DBFF /* SCNGeometry+Lattices.swift in Sources */,
+				BFB8DE7A1E36503100553F48 /* Eigen.swift in Sources */,
 				BF8570BD1D6B50A3007C5C07 /* BoolVector.swift in Sources */,
 				BFBAEB411D855895000C4AF2 /* WyckoffTable.swift in Sources */,
 				BF06F0441D2437BD001D844E /* UserDefaults.swift in Sources */,
@@ -1306,7 +1299,6 @@
 				BFBC40411D063A4B0030A839 /* SpaceGroupHallTable.swift in Sources */,
 				BF74B11B1D49B594001BB048 /* PrimeObject.swift in Sources */,
 				BF904CE21D8CA19A003A571C /* DummyModelObject.swift in Sources */,
-				BF9A71E41D0C819B0009ABD5 /* NSString+MD5.m in Sources */,
 				BFE6B6001D15361A002C61BB /* UIKitSpecific.swift in Sources */,
 				BFBD192E1D7C22190091DBFF /* NSNumber+Lattices.swift in Sources */,
 				BFBD19281D7C21D60091DBFF /* Standard.swift in Sources */,
@@ -1349,7 +1341,6 @@
 				BFBC40381D063A4B0030A839 /* ConcreteObject.swift in Sources */,
 				BF2E28E11D7B6A2100955B58 /* MenuViewController+Bond.swift in Sources */,
 				BFBD19601D7D6E8D0091DBFF /* MenuViewController+Camera.swift in Sources */,
-				BF9A71E71D0C82120009ABD5 /* NSData+MD5.m in Sources */,
 				BFBC401D1D0639C20030A839 /* AppDelegate.swift in Sources */,
 				BF904CAC1D8BF7E1003A571C /* DocumentBrowserModelObject.swift in Sources */,
 				BFBD19131D7C1EF60091DBFF /* String+Lattices.swift in Sources */,
@@ -1373,7 +1364,6 @@
 				BF2E106D1D8D8C4600391C26 /* MyTimer.swift in Sources */,
 				BF1BE37D1D8ABCF2000C4FB4 /* PrimeCrystal.swift in Sources */,
 				BFBD19691D7DBFEE0091DBFF /* SwiftCrystal+iOS.swift in Sources */,
-				BFBC40471D063A5D0030A839 /* TimeStamp.m in Sources */,
 				BF8342A21D503CCB00936002 /* GuideView.swift in Sources */,
 				BF1D8D491D339B9500309845 /* TypeColorView.swift in Sources */,
 				BF79114F1D7837DA00E32C07 /* PrimeAtomBondGrouping.swift in Sources */,
@@ -1602,6 +1592,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4MY8L8N43N;
 				INFOPLIST_FILE = Share/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1619,6 +1610,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4MY8L8N43N;
 				INFOPLIST_FILE = Share/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";

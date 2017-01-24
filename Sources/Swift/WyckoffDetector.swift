@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 enum WyckoffLetter : Int {
     case a,b,c,d,e,f,g

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 struct SpacegroupIndex_t {
     var itNumber : Int

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 extension CrystalCell_t {
     

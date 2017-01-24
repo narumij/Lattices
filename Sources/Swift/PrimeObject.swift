@@ -150,14 +150,14 @@ class PrimeAtom_t {
         return ( anisoU() == nil && anisoB() == nil ) && ( isoU() != nil || isoB() != nil )
     }
 
-    func generateEigen() -> Float3x3Eigen_t {
+    func generateEigen() -> Float3x3Eigen {
         if let mat = cartU {
             return Float3x3Eigen( mat.cmatrix )
         }
-        return Float3x3EigenIdentity
+        return Float3x3Eigen.identity
     }
 
-    var eigen : Float3x3Eigen_t = Float3x3EigenIdentity
+    var eigen : Float3x3Eigen = Float3x3Eigen.identity
 
     var symopRotate : Matrix4x4 {
         let b = ( ( cell.matrix3x3 ) )

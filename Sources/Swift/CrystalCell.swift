@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 class CrystalCell_t {
     var lengthA    : FloatType { return _a     ?? 5.0 }

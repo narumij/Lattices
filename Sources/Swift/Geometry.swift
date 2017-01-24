@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 typealias Plane_t = (n:Vector3,d:FloatType)
 typealias Ray_t = (p:Vector3,d:Vector3)

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import simd
 
 public typealias LatticeCoord = int3
 

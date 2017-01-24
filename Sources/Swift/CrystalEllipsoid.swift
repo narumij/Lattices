@@ -129,49 +129,7 @@ extension Uani_t {
 }
 
 
-extension __CLPK_real {
 
-    var floatType : FloatType {
-        return FloatType(self)
-    }
-
-}
-
-
-extension Float3x3Eigen_t {
-
-    fileprivate var det : FloatType {
-        return matrix_determinant(matrix3x3.cmatrix)
-    }
-
-    var matrix3x3 : Matrix3x3 {
-        return Matrix3x3(
-            matrix_float3x3(columns: (
-                vector_float3( orth.0, orth.1, orth.2 ),
-                vector_float3( orth.3, orth.4, orth.5 ),
-                vector_float3( orth.6, orth.7, orth.8 )
-            ) ) )
-    }
-
-    var matrix4x4 : Matrix4x4 {
-        return Matrix4x4(
-            matrix_float4x4(columns: (
-                vector_float4( orth.0, orth.1, orth.2,              0.0 ),
-                vector_float4( orth.3, orth.4, orth.5,              0.0 ),
-                vector_float4( orth.6, orth.7, orth.8,              0.0 ),
-                vector_float4(    0.0,    0.0,    0.0, det < 0 ? -1 : 1 )
-            ) ) )
-    }
-
-    fileprivate var vector3 : Vector3 {
-        return simd.vector3( vec.0.floatType, vec.1.floatType, vec.2.floatType )
-    }
-
-    var ellipsoidScale : Vector3 {
-        return simd.vector3( sqrt( vec.0 ), sqrt( vec.1 ), sqrt( vec.2 ) )
-    }
-
-}
 
 
 
