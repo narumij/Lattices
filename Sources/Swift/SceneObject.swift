@@ -17,6 +17,7 @@ class SceneType_t {
         type = t
         sphere = SCNSphere(radius: 1.0)
         sphere.firstMaterial = material
+        sphere.isGeodesic = true
         cylinder = SCNCylinder(radius: 1.0, height: 1.0)
         cylinder.firstMaterial = bondMaterial
 
@@ -159,22 +160,29 @@ class SceneAtom_t {
         if let crystal = crystal {
             needUpdateSize = false
             if crystal.radiiType == .Ellipsoid {
-                ellipsoid.addChildNode(ellipsoidX)
+
+                if ellipsoidX.parent == nil {
+                    ellipsoid.addChildNode(ellipsoidX)
+//                    ellipsoidX.scale = SCNVector3(1.0)
+                    ellipsoidX.runAction(SCNAction.scale(to: 1.0, duration: 0.1))
+                }
 
                 let ellipsoidRatio = atom.primeAtom.aniso?.ratio ?? 1.0
                 ellipsoidOrth.transform = atom.primeAtom.ellipsoidNode0Transform
                 ellipsoidSize.scale = atom.primeAtom.ellipsoidNode1Scale
                     * SCNVector3( crystal.probabilityScale )
                     * SCNVector3( ellipsoidRatio )
-                ellipsoidX.scale = SCNVector3(1.0)
             }
             else {
                 let size = crystal.sphereSize( atomicSymbol, bondingCount: bondingCount )
                 ellipsoidOrth.transform = SCNMatrix4Identity
                 ellipsoidSize.scale = SCNVector3( size )
                 ellipsoid.transform = SCNMatrix4Identity
-                ellipsoidX.scale = SCNVector3(0.9)
-                ellipsoidX.removeFromParentNode()
+
+                if ellipsoidX.parent != nil {
+                    ellipsoidX.runAction(SCNAction.scale(to: 0.9, duration: 0.1))
+                    ellipsoidX.runAction(SCNAction.removeFromParentNode())
+                }
             }
         }
     }

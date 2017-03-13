@@ -150,7 +150,7 @@ class CameraController: NSObject {
         commitAxis()
     }
 
-    func cameraMove( translate translate: Vector3, rotate: Vector3, factor: FloatType ) {
+    func cameraMove( translate: Vector3, rotate: Vector3, factor: FloatType ) {
         let o = normalize(Lattices.orientation( rotate, factor: factor ))
         var t = Lattices.translate( translate, factor: factor )
         if usesOrthographicProjection {

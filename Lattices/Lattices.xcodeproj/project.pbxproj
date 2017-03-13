@@ -328,8 +328,6 @@
 		BF55564C1D33B64200B24C77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/ElementName.strings; sourceTree = "<group>"; };
 		BF55C7771DC42118001DE593 /* envmap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = envmap.jpg; sourceTree = "<group>"; };
 		BF60738A1D40903E0075F646 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		BF6175871D85B326000A6319 /* AppDelegate+VerifyReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+VerifyReceipt.h"; sourceTree = "<group>"; };
-		BF6175881D85B326000A6319 /* AppDelegate+VerifyReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+VerifyReceipt.m"; sourceTree = "<group>"; };
 		BF74B1151D496359001BB048 /* CaCuO2.cif */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CaCuO2.cif; sourceTree = "<group>"; };
 		BF74B1191D49B587001BB048 /* PrimeObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeObject.swift; sourceTree = "<group>"; };
 		BF79114B1D78378500E32C07 /* PrimeAtomBondGrouping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeAtomBondGrouping.swift; sourceTree = "<group>"; };
@@ -880,8 +878,6 @@
 			isa = PBXGroup;
 			children = (
 				BFBC404F1D063C3F0030A839 /* SwiftCrystaliOS-Bridging-Header.h */,
-				BF6175871D85B326000A6319 /* AppDelegate+VerifyReceipt.h */,
-				BF6175881D85B326000A6319 /* AppDelegate+VerifyReceipt.m */,
 				BF904CB11D8BF818003A571C /* ShapeEditError.swift */,
 				BFE6B5FF1D15361A002C61BB /* UIKitSpecific.swift */,
 				BF2D926D1D349C5500DD723A /* Main */,

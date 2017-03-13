@@ -214,11 +214,14 @@ class CameraScene_t {
         return SCNQuaternion( from: SCNVector3(0,0,1), to: SCNVector3(normalize(double3(0.25,1,1))) )
     }
     func commitLight() {
-        _lightNode.position = applyOrientation( position: rig.position,
-                                               orientation: rig.orientation,
-                                               center: rig.rotationCenter,
-                                               o: lightOrientation )
-        _lightNode.orientation = rig.orientation * lightOrientation
+        let lightAction = SCNAction.run { (node:SCNNode) in
+            node.position = applyOrientation( position: self.rig.position,
+                                              orientation: self.rig.orientation,
+                                              center: self.rig.rotationCenter,
+                                              o: self.lightOrientation )
+            node.orientation = self.rig.orientation * self.lightOrientation
+        }
+        _lightNode.runAction(lightAction)
     }
     // MARK: -
     var sceneController: AxisSceneController? = nil
@@ -228,6 +231,26 @@ class CameraScene_t {
     // MARK: -
     var completionBlock: (()->Void)? = nil
     func refresh() {
+
+        let action = SCNAction.run { ( node: SCNNode ) in
+            node.position = self.rig.position
+            node.orientation = self.rig.orientation
+            node.camera?.automaticallyAdjustsZRange = true
+            node.camera?.usesOrthographicProjection = self.rig.usesOrthographicProjection
+            node.camera?.yFov = self.rig.yFov
+            node.camera?.xFov = self.rig.yFov
+            if self.rig.usesOrthographicProjection {
+                node.camera?.orthographicScale = self.rig.orthographicScale
+            }
+        }
+
+        action.duration = 0.0
+
+        pointOfView.removeAllAnimations()
+        pointOfView.removeAllActions()
+        pointOfView.runAction(action)
+
+        #if False
         pointOfView.position = rig.position
         pointOfView.orientation = rig.orientation
         pointOfView.camera?.automaticallyAdjustsZRange = true
@@ -237,6 +260,8 @@ class CameraScene_t {
         if rig.usesOrthographicProjection {
             pointOfView.camera?.orthographicScale = rig.orthographicScale
         }
+        #endif
+
         commitLight()
         commitAxis()
         completionBlock?()
@@ -246,6 +271,8 @@ class CameraScene_t {
     var endRotationCenter = SCNVector3Zero
 
     func refreshAnimated() {
+
+        pointOfView.removeAllActions()
 
         var temporaryRig = rig
         temporaryRig.position = pointOfView.presentation.position

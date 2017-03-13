@@ -47,15 +47,29 @@ class AxisSceneController: NSObject {
         } }
 
     var orientation : SCNQuaternion = SCNQuaternion(0,0,0,1)
-        { didSet {
-            contentsNode.orientation = invert(orientation)
-            aNode.orientation = orientation
-            aNode.position = SCNVector3( aVector * 1.25 ) + orientation * offset( aVector, bVector, cVector, -1, -1 )
-            bNode.orientation = orientation
-            bNode.position = SCNVector3( bVector * 1.25 ) + orientation * offset( bVector, aVector, cVector, 1, 1 )
-            cNode.orientation = orientation
-            cNode.position = SCNVector3( cVector * 1.25 ) + orientation * offset( cVector, aVector, bVector, 1, -1 )
-        } }
+        {
+        didSet {
+            let coAction = SCNAction.run({ (node:SCNNode) in
+                node.orientation = invert(self.orientation)
+            })
+            let aAction = SCNAction.run { (node:SCNNode) in
+                node.orientation = self.orientation
+                node.position = SCNVector3( self.aVector * 1.25 ) + self.orientation * self.offset( self.aVector, self.bVector, self.cVector, -1, -1 )
+            }
+            let bAction = SCNAction.run { (node:SCNNode) in
+                node.orientation = self.orientation
+                node.position = SCNVector3( self.bVector * 1.25 ) + self.orientation * self.offset( self.bVector, self.aVector, self.cVector, 1, 1 )
+            }
+            let cAction = SCNAction.run { (node:SCNNode) in
+                node.orientation = self.orientation
+                node.position = SCNVector3( self.cVector * 1.25 ) + self.orientation * self.offset( self.cVector, self.aVector, self.bVector, 1, -1 )
+            }
+            contentsNode.runAction(coAction)
+            aNode.runAction(aAction)
+            bNode.runAction(bAction)
+            cNode.runAction(cAction)
+        }
+    }
 
     var invOrientation: SCNQuaternion {
         return invert(orientation)
