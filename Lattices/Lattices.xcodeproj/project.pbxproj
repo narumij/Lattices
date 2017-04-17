@@ -1630,7 +1630,6 @@
 				INFOPLIST_FILE = Lattices/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "../OpenSSL-for-iPhone/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1653,7 +1652,6 @@
 				INFOPLIST_FILE = Lattices/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "../OpenSSL-for-iPhone/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

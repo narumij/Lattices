@@ -217,7 +217,7 @@ extension SCNQuaternion {
             v -= p1 * dot( p1, v);
             v = normalize(v);
 
-            self.init( angles: float_t(M_PI) , axis: v )
+            self.init( angles: float_t.pi, axis: v )
             return
         }
 

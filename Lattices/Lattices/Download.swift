@@ -108,7 +108,7 @@ class DownloadItem {
 
         message = "File Copy"
 
-        debugPrint("finish download \(downloadedURL) \(response?.suggestedFilename)")
+        debugPrint("finish download \(String(describing: downloadedURL)) \(String(describing: response?.suggestedFilename))")
         assert( try! Data(contentsOf: downloadedURL!).count > 0 )
 
 

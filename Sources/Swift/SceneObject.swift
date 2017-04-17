@@ -130,8 +130,8 @@ class SceneAtom_t {
             xNode.geometry = SceneAtom_t.primeCylinder
             yNode.geometry = SceneAtom_t.primeCylinder
             zNode.geometry = SceneAtom_t.primeCylinder
-            yNode.rotation = SCNVector4(1,0,0,M_PI_2)
-            zNode.rotation = SCNVector4(0,0,1,M_PI_2)
+            yNode.rotation = SCNVector4(1,0,0,Double.pi / 2)
+            zNode.rotation = SCNVector4(0,0,1,Double.pi / 2)
             ellipsoidX.addChildNode(xNode)
             ellipsoidX.addChildNode(yNode)
             ellipsoidX.addChildNode(zNode)

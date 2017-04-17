@@ -22,7 +22,7 @@ class ViewController: UIViewController {
                 try (url as NSURL).getPromisedItemResourceValue(&displayName, forKey: URLResourceKey.localizedNameKey)
                 title = displayName as? String
 
-                debugPrint("title = \(title)")
+                debugPrint("title = \(String(describing: title))")
             }
             catch {
                 // Ignore a failure here. We'll just keep the old display name.

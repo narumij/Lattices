@@ -18,7 +18,7 @@ class ShareViewController: SLComposeServiceViewController {
 //        self.title = "Save to Lattices";
         let c: UIViewController = self.navigationController!.viewControllers[0]
         c.navigationItem.rightBarButtonItem!.title = "Send"
-        debugPrint("\(extensionContext?.inputItems)")
+        debugPrint("\(String(describing: extensionContext?.inputItems))")
 
     }
 

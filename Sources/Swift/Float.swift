@@ -29,26 +29,26 @@ infix operator !~~~: ComparisonPrecedence
 //#if os(OSX)
 extension Float {
     var toRadian : Float {
-        return self * Float(M_PI) / 180.0
+        return self * .pi / 180.0
     }
     var toDegree : Float {
-        return self * 180.0 / Float(M_PI)
+        return self * 180.0 / .pi
     }
 }
 //#endif
 
 extension Float {
-    static let epsilon : Float = FLT_EPSILON
+    static let epsilon : Float = .ulpOfOne
 }
 
 extension Double {
     var toRadian : Double {
-        return self * M_PI / 180.0
+        return self * .pi / 180.0
     }
     var toDegree : Double {
-        return self * 180.0 / M_PI
+        return self * 180.0 / .pi
     }
-    static let epsilon : Double = DBL_EPSILON
+    static let epsilon : Double = .ulpOfOne
 }
 
 func =~( l:Float, r:Float) -> Bool {

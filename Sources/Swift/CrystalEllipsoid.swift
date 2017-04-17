@@ -52,7 +52,7 @@ extension Aniso {
     }
 }
 
-private var anisoTransformCoef : FloatType = 8.0 * pow( FloatType(M_PI), 2.0 )
+private var anisoTransformCoef : FloatType = 8.0 * pow( FloatType.pi, 2.0 )
 
 private func aniTrans( _ val0 : FloatType,_ val1 : FloatType ) -> FloatType {
     return anisoTransformCoef * val0 * val1
