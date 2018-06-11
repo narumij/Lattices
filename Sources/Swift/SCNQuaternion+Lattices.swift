@@ -60,10 +60,10 @@ extension SCNQuaternion {
 
 func * ( l: SCNQuaternion, r: SCNQuaternion ) -> SCNQuaternion
 {
-    let x = vector_reduce_add( l.q3012 * r.q0321 * vec4_t( 1, 1, 1,-1 ) )
-    let y = vector_reduce_add( l.q3120 * r.q1302 * vec4_t( 1, 1, 1,-1 ) )
-    let z = vector_reduce_add( l.q3201 * r.q2310 * vec4_t( 1, 1, 1,-1 ) )
-    let w = vector_reduce_add( l.q3012 * r.q3012 * vec4_t( 1,-1,-1,-1 ) )
+    let x = reduce_add( l.q3012 * r.q0321 * vec4_t( 1, 1, 1,-1 ) )
+    let y = reduce_add( l.q3120 * r.q1302 * vec4_t( 1, 1, 1,-1 ) )
+    let z = reduce_add( l.q3201 * r.q2310 * vec4_t( 1, 1, 1,-1 ) )
+    let w = reduce_add( l.q3012 * r.q3012 * vec4_t( 1,-1,-1,-1 ) )
     return SCNQuaternion( x, y, z, w )
 }
 
@@ -72,7 +72,6 @@ func * ( quaternion: SCNQuaternion, vector: SCNVector3 ) -> SCNVector3 {
     rotatedQuaternion = quaternion * rotatedQuaternion * invert(quaternion);
     return SCNVector3( rotatedQuaternion.x, rotatedQuaternion.y, rotatedQuaternion.z );
 }
-
 
 func invert( _ quaternion: SCNQuaternion ) -> SCNQuaternion {
     let quat = vec4_t(quaternion)
@@ -101,6 +100,7 @@ func slerp( _ quaternionStart: SCNQuaternion, _ quaternionEnd: SCNQuaternion, _ 
 
 extension GLKQuaternion {
     init( _ scn: SCNQuaternion ) {
+        self.init()
         q.0 = scn.x
         q.1 = scn.y
         q.2 = scn.z
@@ -111,6 +111,7 @@ extension GLKQuaternion {
 extension SCNQuaternion {
 
     init( _ glk: GLKQuaternion ) {
+        self.init()
         x = glk.q.0
         y = glk.q.1
         z = glk.q.2
@@ -126,6 +127,7 @@ extension SCNQuaternion {
     {
         let halfAngle = angles * 0.5;
         let scale = sin(halfAngle);
+        self.init()
         self.x = scale * x
         self.y = scale * y
         self.z = scale * z
@@ -167,6 +169,7 @@ extension SCNQuaternion {
             _array[j] = ( m[i,j] + m[j,i] ) * s;
             _array[k] = ( m[i,k] + m[k,i] ) * s;
         }
+        self.init()
         self.x = _array[0]
         self.y = _array[1]
         self.z = _array[2]

@@ -1076,26 +1076,26 @@
 					};
 					BF4DC7C71D3D35D300D2E1B0 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4MY8L8N43N;
+						DevelopmentTeam = 89EZ44Z4V3;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
 					BFBC40191D0639C20030A839 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 4MY8L8N43N;
+						DevelopmentTeam = 89EZ44Z4V3;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.iCloud = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -1583,10 +1583,9 @@
 		BF4DC7D41D3D35D300D2E1B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4MY8L8N43N;
+				DEVELOPMENT_TEAM = 89EZ44Z4V3;
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1601,10 +1600,9 @@
 		BF4DC7D51D3D35D300D2E1B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Share/Share.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4MY8L8N43N;
+				DEVELOPMENT_TEAM = 89EZ44Z4V3;
 				INFOPLIST_FILE = Share/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1622,10 +1620,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Lattices/Lattices.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4MY8L8N43N;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89EZ44Z4V3;
 				HEADER_SEARCH_PATHS = "../OpenSSL-for-iPhone/include";
 				INFOPLIST_FILE = Lattices/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
@@ -1633,6 +1631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "../Sources/Objc/SwiftCrystaliOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1644,10 +1643,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Lattices/Lattices.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 4MY8L8N43N;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89EZ44Z4V3;
 				HEADER_SEARCH_PATHS = "../OpenSSL-for-iPhone/include";
 				INFOPLIST_FILE = Lattices/Info.plist;
 				INFOPLIST_PREPROCESS = YES;
@@ -1655,6 +1654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.zenithgear.Lattices.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "../Sources/Objc/SwiftCrystaliOS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";

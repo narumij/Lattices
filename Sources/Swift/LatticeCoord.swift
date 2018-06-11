@@ -29,16 +29,9 @@ func latticeCoordFullOffsets() -> [LatticeCoord] {
     return offsets
 }
 
-extension LatticeCoord : Equatable {
-}
-
-public func == ( left: LatticeCoord, right: LatticeCoord ) -> Bool {
-    return left.x == right.x && left.y == right.y && left.z == right.z
-}
-
-func != ( left: LatticeCoord, right: LatticeCoord ) -> Bool {
-    return !(left == right)
-}
+//func != ( left: LatticeCoord, right: LatticeCoord ) -> Bool {
+//    return !(left == right)
+//}
 
 func + ( left: LatticeCoord, right: LatticeCoord ) -> LatticeCoord {
     return LatticeCoord( left.x + right.x, left.y + right.y, left.z + right.z )

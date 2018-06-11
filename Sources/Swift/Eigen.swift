@@ -48,15 +48,15 @@ struct Float3x3Eigen {
         let work = UnsafeMutablePointer<__CLPK_real>.allocate(capacity: Int(lwork) )
         let e = UnsafeMutablePointer<__CLPK_real>.allocate(capacity: 12)
 
-        e.advanced(by: 0).pointee = m.columns.0[0]
-        e.advanced(by: 1).pointee = m.columns.0[1]
-        e.advanced(by: 2).pointee = m.columns.0[2]
-        e.advanced(by: 3).pointee = m.columns.1[0]
-        e.advanced(by: 4).pointee = m.columns.1[1]
-        e.advanced(by: 5).pointee = m.columns.1[2]
-        e.advanced(by: 6).pointee = m.columns.2[0]
-        e.advanced(by: 7).pointee = m.columns.2[1]
-        e.advanced(by: 8).pointee = m.columns.2[2]
+        e.advanced(by: 0).pointee = m.columns[0][0]
+        e.advanced(by: 1).pointee = m.columns[0][1]
+        e.advanced(by: 2).pointee = m.columns[0][2]
+        e.advanced(by: 3).pointee = m.columns[1][0]
+        e.advanced(by: 4).pointee = m.columns[1][1]
+        e.advanced(by: 5).pointee = m.columns[1][2]
+        e.advanced(by: 6).pointee = m.columns[2][0]
+        e.advanced(by: 7).pointee = m.columns[2][1]
+        e.advanced(by: 8).pointee = m.columns[2][2]
 
         ssyev_(&jobz,
                &uplo,

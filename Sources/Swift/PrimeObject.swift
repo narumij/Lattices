@@ -58,7 +58,7 @@ class PrimeAtom_t {
     }
 
     func fract( _ latticeCoord: LatticeCoord ) -> Vector3 {
-        return clamped + vector_float( latticeCoord )
+        return clamped + vector_float3( latticeCoord )
     }
 
 //    var cartnCache: [LatticeCoord:Vector3] = [:]

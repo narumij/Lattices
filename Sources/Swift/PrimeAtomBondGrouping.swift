@@ -188,7 +188,7 @@ extension PrimeAtomBondGroup_t {
                 }
 
                 let hoge = positions.keys.map({
-                    (coord:$0,d:distance(cartn(center-vector_float($0)),cell.cartnCenter))
+                    (coord:$0,d:distance(cartn(center-vector_float3($0)),cell.cartnCenter))
                 }).sorted(by: {
                     (a, b) -> Bool in return boolean(a,b)
                 }).first

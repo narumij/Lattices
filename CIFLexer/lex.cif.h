@@ -2,7 +2,7 @@
 #define cifHEADER_H 1
 #define cifIN_HEADER 1
 
-#line 6 "lex.cif.h"
+#line 5 "lex.cif.h"
 
 #define  YY_INT_ALIGNED short int
 
@@ -11,9 +11,219 @@
 #define FLEX_SCANNER
 #define YY_FLEX_MAJOR_VERSION 2
 #define YY_FLEX_MINOR_VERSION 6
-#define YY_FLEX_SUBMINOR_VERSION 0
+#define YY_FLEX_SUBMINOR_VERSION 4
 #if YY_FLEX_SUBMINOR_VERSION > 0
 #define FLEX_BETA
+#endif
+
+#ifdef yy_create_buffer
+#define cif_create_buffer_ALREADY_DEFINED
+#else
+#define yy_create_buffer cif_create_buffer
+#endif
+
+#ifdef yy_delete_buffer
+#define cif_delete_buffer_ALREADY_DEFINED
+#else
+#define yy_delete_buffer cif_delete_buffer
+#endif
+
+#ifdef yy_scan_buffer
+#define cif_scan_buffer_ALREADY_DEFINED
+#else
+#define yy_scan_buffer cif_scan_buffer
+#endif
+
+#ifdef yy_scan_string
+#define cif_scan_string_ALREADY_DEFINED
+#else
+#define yy_scan_string cif_scan_string
+#endif
+
+#ifdef yy_scan_bytes
+#define cif_scan_bytes_ALREADY_DEFINED
+#else
+#define yy_scan_bytes cif_scan_bytes
+#endif
+
+#ifdef yy_init_buffer
+#define cif_init_buffer_ALREADY_DEFINED
+#else
+#define yy_init_buffer cif_init_buffer
+#endif
+
+#ifdef yy_flush_buffer
+#define cif_flush_buffer_ALREADY_DEFINED
+#else
+#define yy_flush_buffer cif_flush_buffer
+#endif
+
+#ifdef yy_load_buffer_state
+#define cif_load_buffer_state_ALREADY_DEFINED
+#else
+#define yy_load_buffer_state cif_load_buffer_state
+#endif
+
+#ifdef yy_switch_to_buffer
+#define cif_switch_to_buffer_ALREADY_DEFINED
+#else
+#define yy_switch_to_buffer cif_switch_to_buffer
+#endif
+
+#ifdef yypush_buffer_state
+#define cifpush_buffer_state_ALREADY_DEFINED
+#else
+#define yypush_buffer_state cifpush_buffer_state
+#endif
+
+#ifdef yypop_buffer_state
+#define cifpop_buffer_state_ALREADY_DEFINED
+#else
+#define yypop_buffer_state cifpop_buffer_state
+#endif
+
+#ifdef yyensure_buffer_stack
+#define cifensure_buffer_stack_ALREADY_DEFINED
+#else
+#define yyensure_buffer_stack cifensure_buffer_stack
+#endif
+
+#ifdef yylex
+#define ciflex_ALREADY_DEFINED
+#else
+#define yylex ciflex
+#endif
+
+#ifdef yyrestart
+#define cifrestart_ALREADY_DEFINED
+#else
+#define yyrestart cifrestart
+#endif
+
+#ifdef yylex_init
+#define ciflex_init_ALREADY_DEFINED
+#else
+#define yylex_init ciflex_init
+#endif
+
+#ifdef yylex_init_extra
+#define ciflex_init_extra_ALREADY_DEFINED
+#else
+#define yylex_init_extra ciflex_init_extra
+#endif
+
+#ifdef yylex_destroy
+#define ciflex_destroy_ALREADY_DEFINED
+#else
+#define yylex_destroy ciflex_destroy
+#endif
+
+#ifdef yyget_debug
+#define cifget_debug_ALREADY_DEFINED
+#else
+#define yyget_debug cifget_debug
+#endif
+
+#ifdef yyset_debug
+#define cifset_debug_ALREADY_DEFINED
+#else
+#define yyset_debug cifset_debug
+#endif
+
+#ifdef yyget_extra
+#define cifget_extra_ALREADY_DEFINED
+#else
+#define yyget_extra cifget_extra
+#endif
+
+#ifdef yyset_extra
+#define cifset_extra_ALREADY_DEFINED
+#else
+#define yyset_extra cifset_extra
+#endif
+
+#ifdef yyget_in
+#define cifget_in_ALREADY_DEFINED
+#else
+#define yyget_in cifget_in
+#endif
+
+#ifdef yyset_in
+#define cifset_in_ALREADY_DEFINED
+#else
+#define yyset_in cifset_in
+#endif
+
+#ifdef yyget_out
+#define cifget_out_ALREADY_DEFINED
+#else
+#define yyget_out cifget_out
+#endif
+
+#ifdef yyset_out
+#define cifset_out_ALREADY_DEFINED
+#else
+#define yyset_out cifset_out
+#endif
+
+#ifdef yyget_leng
+#define cifget_leng_ALREADY_DEFINED
+#else
+#define yyget_leng cifget_leng
+#endif
+
+#ifdef yyget_text
+#define cifget_text_ALREADY_DEFINED
+#else
+#define yyget_text cifget_text
+#endif
+
+#ifdef yyget_lineno
+#define cifget_lineno_ALREADY_DEFINED
+#else
+#define yyget_lineno cifget_lineno
+#endif
+
+#ifdef yyset_lineno
+#define cifset_lineno_ALREADY_DEFINED
+#else
+#define yyset_lineno cifset_lineno
+#endif
+
+#ifdef yyget_column
+#define cifget_column_ALREADY_DEFINED
+#else
+#define yyget_column cifget_column
+#endif
+
+#ifdef yyset_column
+#define cifset_column_ALREADY_DEFINED
+#else
+#define yyset_column cifset_column
+#endif
+
+#ifdef yywrap
+#define cifwrap_ALREADY_DEFINED
+#else
+#define yywrap cifwrap
+#endif
+
+#ifdef yyalloc
+#define cifalloc_ALREADY_DEFINED
+#else
+#define yyalloc cifalloc
+#endif
+
+#ifdef yyrealloc
+#define cifrealloc_ALREADY_DEFINED
+#else
+#define yyrealloc cifrealloc
+#endif
+
+#ifdef yyfree
+#define ciffree_ALREADY_DEFINED
+#else
+#define yyfree ciffree
 #endif
 
 /* First, we deal with  platform-specific or compiler-specific issues. */
@@ -86,29 +296,23 @@ typedef unsigned int flex_uint32_t;
 #define UINT32_MAX             (4294967295U)
 #endif
 
+#ifndef SIZE_MAX
+#define SIZE_MAX               (~(size_t)0)
+#endif
+
 #endif /* ! C99 */
 
 #endif /* ! FLEXINT_H */
 
-#ifdef __cplusplus
+/* begin standard C++ headers. */
 
-/* The "const" storage-class-modifier is valid. */
-#define YY_USE_CONST
-
-#else	/* ! __cplusplus */
-
-/* C99 requires __STDC__ to be defined as 1. */
-#if defined (__STDC__)
-
-#define YY_USE_CONST
-
-#endif	/* defined (__STDC__) */
-#endif	/* ! __cplusplus */
-
-#ifdef YY_USE_CONST
+/* TODO: this is always defined, so inline it */
 #define yyconst const
+
+#if defined(__GNUC__) && __GNUC__ >= 3
+#define yynoreturn __attribute__((__noreturn__))
 #else
-#define yyconst
+#define yynoreturn
 #endif
 
 /* An opaque pointer. */
@@ -163,12 +367,12 @@ struct yy_buffer_state
 	/* Size of input buffer in bytes, not including room for EOB
 	 * characters.
 	 */
-	yy_size_t yy_buf_size;
+	int yy_buf_size;
 
 	/* Number of characters read into yy_ch_buf, not including EOB
 	 * characters.
 	 */
-	yy_size_t yy_n_chars;
+	int yy_n_chars;
 
 	/* Whether we "own" the buffer - i.e., we know we created it,
 	 * and can realloc() it to grow it, and should free() it to
@@ -191,7 +395,7 @@ struct yy_buffer_state
 
     int yy_bs_lineno; /**< The line count. */
     int yy_bs_column; /**< The column count. */
-    
+
 	/* Whether to try to fill the input buffer when we reach the
 	 * end of it.
 	 */
@@ -202,21 +406,21 @@ struct yy_buffer_state
 	};
 #endif /* !YY_STRUCT_YY_BUFFER_STATE */
 
-void cifrestart (FILE *input_file ,yyscan_t yyscanner );
-void cif_switch_to_buffer (YY_BUFFER_STATE new_buffer ,yyscan_t yyscanner );
-YY_BUFFER_STATE cif_create_buffer (FILE *file,int size ,yyscan_t yyscanner );
-void cif_delete_buffer (YY_BUFFER_STATE b ,yyscan_t yyscanner );
-void cif_flush_buffer (YY_BUFFER_STATE b ,yyscan_t yyscanner );
-void cifpush_buffer_state (YY_BUFFER_STATE new_buffer ,yyscan_t yyscanner );
-void cifpop_buffer_state (yyscan_t yyscanner );
+void yyrestart ( FILE *input_file , yyscan_t yyscanner );
+void yy_switch_to_buffer ( YY_BUFFER_STATE new_buffer , yyscan_t yyscanner );
+YY_BUFFER_STATE yy_create_buffer ( FILE *file, int size , yyscan_t yyscanner );
+void yy_delete_buffer ( YY_BUFFER_STATE b , yyscan_t yyscanner );
+void yy_flush_buffer ( YY_BUFFER_STATE b , yyscan_t yyscanner );
+void yypush_buffer_state ( YY_BUFFER_STATE new_buffer , yyscan_t yyscanner );
+void yypop_buffer_state ( yyscan_t yyscanner );
 
-YY_BUFFER_STATE cif_scan_buffer (char *base,yy_size_t size ,yyscan_t yyscanner );
-YY_BUFFER_STATE cif_scan_string (yyconst char *yy_str ,yyscan_t yyscanner );
-YY_BUFFER_STATE cif_scan_bytes (yyconst char *bytes,yy_size_t len ,yyscan_t yyscanner );
+YY_BUFFER_STATE yy_scan_buffer ( char *base, yy_size_t size , yyscan_t yyscanner );
+YY_BUFFER_STATE yy_scan_string ( const char *yy_str , yyscan_t yyscanner );
+YY_BUFFER_STATE yy_scan_bytes ( const char *bytes, int len , yyscan_t yyscanner );
 
-void *cifalloc (yy_size_t ,yyscan_t yyscanner );
-void *cifrealloc (void *,yy_size_t ,yyscan_t yyscanner );
-void ciffree (void * ,yyscan_t yyscanner );
+void *yyalloc ( yy_size_t , yyscan_t yyscanner );
+void *yyrealloc ( void *, yy_size_t , yyscan_t yyscanner );
+void yyfree ( void * , yyscan_t yyscanner );
 
 /* Begin user sect3 */
 
@@ -247,42 +451,42 @@ void ciffree (void * ,yyscan_t yyscanner );
 #define YY_EXTRA_TYPE void *
 #endif
 
-int ciflex_init (yyscan_t* scanner);
+int yylex_init (yyscan_t* scanner);
 
-int ciflex_init_extra (YY_EXTRA_TYPE user_defined,yyscan_t* scanner);
+int yylex_init_extra ( YY_EXTRA_TYPE user_defined, yyscan_t* scanner);
 
 /* Accessor methods to globals.
    These are made visible to non-reentrant scanners for convenience. */
 
-int ciflex_destroy (yyscan_t yyscanner );
+int yylex_destroy ( yyscan_t yyscanner );
 
-int cifget_debug (yyscan_t yyscanner );
+int yyget_debug ( yyscan_t yyscanner );
 
-void cifset_debug (int debug_flag ,yyscan_t yyscanner );
+void yyset_debug ( int debug_flag , yyscan_t yyscanner );
 
-YY_EXTRA_TYPE cifget_extra (yyscan_t yyscanner );
+YY_EXTRA_TYPE yyget_extra ( yyscan_t yyscanner );
 
-void cifset_extra (YY_EXTRA_TYPE user_defined ,yyscan_t yyscanner );
+void yyset_extra ( YY_EXTRA_TYPE user_defined , yyscan_t yyscanner );
 
-FILE *cifget_in (yyscan_t yyscanner );
+FILE *yyget_in ( yyscan_t yyscanner );
 
-void cifset_in  (FILE * _in_str ,yyscan_t yyscanner );
+void yyset_in  ( FILE * _in_str , yyscan_t yyscanner );
 
-FILE *cifget_out (yyscan_t yyscanner );
+FILE *yyget_out ( yyscan_t yyscanner );
 
-void cifset_out  (FILE * _out_str ,yyscan_t yyscanner );
+void yyset_out  ( FILE * _out_str , yyscan_t yyscanner );
 
-yy_size_t cifget_leng (yyscan_t yyscanner );
+			int yyget_leng ( yyscan_t yyscanner );
 
-char *cifget_text (yyscan_t yyscanner );
+char *yyget_text ( yyscan_t yyscanner );
 
-int cifget_lineno (yyscan_t yyscanner );
+int yyget_lineno ( yyscan_t yyscanner );
 
-void cifset_lineno (int _line_number ,yyscan_t yyscanner );
+void yyset_lineno ( int _line_number , yyscan_t yyscanner );
 
-int cifget_column  (yyscan_t yyscanner );
+int yyget_column  ( yyscan_t yyscanner );
 
-void cifset_column (int _column_no ,yyscan_t yyscanner );
+void yyset_column ( int _column_no , yyscan_t yyscanner );
 
 /* Macros after this point can all be overridden by user definitions in
  * section 1.
@@ -290,18 +494,18 @@ void cifset_column (int _column_no ,yyscan_t yyscanner );
 
 #ifndef YY_SKIP_YYWRAP
 #ifdef __cplusplus
-extern "C" int cifwrap (yyscan_t yyscanner );
+extern "C" int yywrap ( yyscan_t yyscanner );
 #else
-extern int cifwrap (yyscan_t yyscanner );
+extern int yywrap ( yyscan_t yyscanner );
 #endif
 #endif
 
 #ifndef yytext_ptr
-static void yy_flex_strncpy (char *,yyconst char *,int ,yyscan_t yyscanner);
+static void yy_flex_strncpy ( char *, const char *, int , yyscan_t yyscanner);
 #endif
 
 #ifdef YY_NEED_STRLEN
-static int yy_flex_strlen (yyconst char * ,yyscan_t yyscanner);
+static int yy_flex_strlen ( const char * , yyscan_t yyscanner);
 #endif
 
 #ifndef YY_NO_INPUT
@@ -329,9 +533,9 @@ static int yy_flex_strlen (yyconst char * ,yyscan_t yyscanner);
 #ifndef YY_DECL
 #define YY_DECL_IS_OURS 1
 
-extern int ciflex (yyscan_t yyscanner);
+extern int yylex (yyscan_t yyscanner);
 
-#define YY_DECL int ciflex (yyscan_t yyscanner)
+#define YY_DECL int yylex (yyscan_t yyscanner)
 #endif /* !YY_DECL */
 
 /* yy_get_previous_state - get the state just before the EOB char was reached */
@@ -348,9 +552,154 @@ extern int ciflex (yyscan_t yyscanner);
 #undef YY_DECL
 #endif
 
+#ifndef cif_create_buffer_ALREADY_DEFINED
+#undef yy_create_buffer
+#endif
+#ifndef cif_delete_buffer_ALREADY_DEFINED
+#undef yy_delete_buffer
+#endif
+#ifndef cif_scan_buffer_ALREADY_DEFINED
+#undef yy_scan_buffer
+#endif
+#ifndef cif_scan_string_ALREADY_DEFINED
+#undef yy_scan_string
+#endif
+#ifndef cif_scan_bytes_ALREADY_DEFINED
+#undef yy_scan_bytes
+#endif
+#ifndef cif_init_buffer_ALREADY_DEFINED
+#undef yy_init_buffer
+#endif
+#ifndef cif_flush_buffer_ALREADY_DEFINED
+#undef yy_flush_buffer
+#endif
+#ifndef cif_load_buffer_state_ALREADY_DEFINED
+#undef yy_load_buffer_state
+#endif
+#ifndef cif_switch_to_buffer_ALREADY_DEFINED
+#undef yy_switch_to_buffer
+#endif
+#ifndef cifpush_buffer_state_ALREADY_DEFINED
+#undef yypush_buffer_state
+#endif
+#ifndef cifpop_buffer_state_ALREADY_DEFINED
+#undef yypop_buffer_state
+#endif
+#ifndef cifensure_buffer_stack_ALREADY_DEFINED
+#undef yyensure_buffer_stack
+#endif
+#ifndef ciflex_ALREADY_DEFINED
+#undef yylex
+#endif
+#ifndef cifrestart_ALREADY_DEFINED
+#undef yyrestart
+#endif
+#ifndef ciflex_init_ALREADY_DEFINED
+#undef yylex_init
+#endif
+#ifndef ciflex_init_extra_ALREADY_DEFINED
+#undef yylex_init_extra
+#endif
+#ifndef ciflex_destroy_ALREADY_DEFINED
+#undef yylex_destroy
+#endif
+#ifndef cifget_debug_ALREADY_DEFINED
+#undef yyget_debug
+#endif
+#ifndef cifset_debug_ALREADY_DEFINED
+#undef yyset_debug
+#endif
+#ifndef cifget_extra_ALREADY_DEFINED
+#undef yyget_extra
+#endif
+#ifndef cifset_extra_ALREADY_DEFINED
+#undef yyset_extra
+#endif
+#ifndef cifget_in_ALREADY_DEFINED
+#undef yyget_in
+#endif
+#ifndef cifset_in_ALREADY_DEFINED
+#undef yyset_in
+#endif
+#ifndef cifget_out_ALREADY_DEFINED
+#undef yyget_out
+#endif
+#ifndef cifset_out_ALREADY_DEFINED
+#undef yyset_out
+#endif
+#ifndef cifget_leng_ALREADY_DEFINED
+#undef yyget_leng
+#endif
+#ifndef cifget_text_ALREADY_DEFINED
+#undef yyget_text
+#endif
+#ifndef cifget_lineno_ALREADY_DEFINED
+#undef yyget_lineno
+#endif
+#ifndef cifset_lineno_ALREADY_DEFINED
+#undef yyset_lineno
+#endif
+#ifndef cifget_column_ALREADY_DEFINED
+#undef yyget_column
+#endif
+#ifndef cifset_column_ALREADY_DEFINED
+#undef yyset_column
+#endif
+#ifndef cifwrap_ALREADY_DEFINED
+#undef yywrap
+#endif
+#ifndef cifget_lval_ALREADY_DEFINED
+#undef yyget_lval
+#endif
+#ifndef cifset_lval_ALREADY_DEFINED
+#undef yyset_lval
+#endif
+#ifndef cifget_lloc_ALREADY_DEFINED
+#undef yyget_lloc
+#endif
+#ifndef cifset_lloc_ALREADY_DEFINED
+#undef yyset_lloc
+#endif
+#ifndef cifalloc_ALREADY_DEFINED
+#undef yyalloc
+#endif
+#ifndef cifrealloc_ALREADY_DEFINED
+#undef yyrealloc
+#endif
+#ifndef ciffree_ALREADY_DEFINED
+#undef yyfree
+#endif
+#ifndef ciftext_ALREADY_DEFINED
+#undef yytext
+#endif
+#ifndef cifleng_ALREADY_DEFINED
+#undef yyleng
+#endif
+#ifndef cifin_ALREADY_DEFINED
+#undef yyin
+#endif
+#ifndef cifout_ALREADY_DEFINED
+#undef yyout
+#endif
+#ifndef cif_flex_debug_ALREADY_DEFINED
+#undef yy_flex_debug
+#endif
+#ifndef ciflineno_ALREADY_DEFINED
+#undef yylineno
+#endif
+#ifndef ciftables_fload_ALREADY_DEFINED
+#undef yytables_fload
+#endif
+#ifndef ciftables_destroy_ALREADY_DEFINED
+#undef yytables_destroy
+#endif
+#ifndef cifTABLES_NAME_ALREADY_DEFINED
+#undef yyTABLES_NAME
+#endif
+
 #line 120 "CIFLexer.l"
 
 
-#line 355 "lex.cif.h"
+#line 703 "lex.cif.h"
 #undef cifIN_HEADER
 #endif /* cifHEADER_H */

@@ -7,6 +7,7 @@
 //
 
 import SceneKit
+import simd
 
 struct Sphere {
     var center: SCNVector3 = SCNVector3Zero
@@ -286,17 +287,21 @@ class CameraScene_t {
         let endOrientation = rig.orientation
         let endDistance = rig.actualDistance
 
+        func mix( _ x : Double, _ y : Double, t : Double ) -> Double {
+            return x * ( 1.0 - t ) + y * t
+        }
+
         var values: [(SCNVector3,SCNQuaternion)] = []
         for i in 0..<10 {
 
-            let d = vector_mix( startDistance, endDistance, Double(i)/10 )
+            let d = mix( startDistance, endDistance, t: Double(i)/10 )
             temporaryRig.actualDistance = d
 
             let o = slerp( startOrientation, endOrientation, SCNFloat(i)/10 )
-            temporaryRig.rotationCenter = SCNVector3( vector_mix(
+            temporaryRig.rotationCenter = SCNVector3( simd.mix(
                 Vector3( startRotationCenter ),
                 Vector3( endRotationCenter ),
-                Vector3( FloatType(i) / 10.0 ) ) )
+                t: Vector3( FloatType(i) / 10.0 ) ) )
             temporaryRig.rotate( orientation: o )
 
             values.append( ( temporaryRig.position, temporaryRig.orientation ) )

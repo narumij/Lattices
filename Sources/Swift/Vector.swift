@@ -77,16 +77,9 @@ extension Vector4 {
 
 }
 
-extension Vector3 : Equatable {
-}
-
-public func == ( left: Vector3, right: Vector3 ) -> Bool {
-    return left.x == right.x && left.y == right.y && left.z == right.z
-}
-
-func != ( left: Vector3, right: Vector3 ) -> Bool {
-    return !(left == right)
-}
+//func != ( left: Vector3, right: Vector3 ) -> Bool {
+//    return !(left == right)
+//}
 
 func =~( l:Vector3, r:Vector3) -> Bool {
 //    return distance(l,r) < 0.001

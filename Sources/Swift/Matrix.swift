@@ -36,19 +36,10 @@ func any( _ boolArray: [Bool] ) -> Bool {
     return boolArray.reduce(false) { $0 || $1 }
 }
 
-extension Matrix4x4: Equatable {
-}
-
-public func == ( left: Matrix4x4, right: Matrix4x4 ) -> Bool {
-    return all([0,1,2,3].map({(left[$0],right[$0])}).map({all($0.0==$0.1)}))
-}
 func =~~ ( left: Matrix4x4, right: Matrix4x4 ) -> Bool {
     return all([0,1,2,3].map({(left[$0],right[$0])}).map({all($0.0=~~$0.1)}))
 }
 
-func == ( left: Matrix3x3, right: Matrix3x3 ) -> Bool {
-    return all([0,1,2].map({(left[$0],right[$0])}).map({all($0.0==$0.1)}))
-}
 func =~~ ( left: Matrix3x3, right: Matrix3x3 ) -> Bool {
     return all([0,1,2].map({(left[$0],right[$0])}).map({all($0.0=~~$0.1)}))
 }
