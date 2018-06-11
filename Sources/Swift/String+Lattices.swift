@@ -10,11 +10,11 @@ import Foundation
 
 extension String {
     func head( _ count: Int ) -> String {
-        let idx = self.characters.index(self.startIndex, offsetBy: count)
+        let idx = self.index(self.startIndex, offsetBy: count)
         return self.substring(to: idx)
     }
     func tail( _ count: Int ) -> String {
-        let idx = self.characters.index(self.startIndex, offsetBy: count)
+        let idx = self.index(self.startIndex, offsetBy: count)
         return self.substring(from: idx)
     }
 }

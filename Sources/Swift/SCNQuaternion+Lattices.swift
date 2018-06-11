@@ -238,6 +238,7 @@ extension SCNQuaternion {
 
     init(_ q: SCNQuaternion )
     {
+        self.init()
         self.x = q.x
         self.y = q.y
         self.z = q.z

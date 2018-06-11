@@ -10,6 +10,7 @@ import UIKit
 
 extension CGPoint {
     init(_ size: CGSize ) {
+        self.init()
         x = size.width
         y = size.width
     }
@@ -22,10 +23,12 @@ extension CGSize {
         return [width,height]
     }
     init(_ elements:[CGFloat]) {
+        self.init()
         width  = elements[0]
         height = elements[1]
     }
     init( scalar: CGFloat ) {
+        self.init()
         width = scalar
         height = scalar
     }

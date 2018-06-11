@@ -16,14 +16,14 @@ class Regexp {
     }
 
     func isMatch(_ input: String) -> Bool {
-        let range = NSRange(location: 0, length: input.characters.count )
+        let range = NSRange(location: 0, length: input.count )
         let matches = self.internalRegexp.matches( in: input, options: [], range:range )
         return matches.count > 0
     }
 
     func matches(_ input: String) -> [String] {
         if self.isMatch(input) {
-            let range = NSRange(location: 0, length: input.characters.count )
+            let range = NSRange(location: 0, length: input.count )
             let matches = self.internalRegexp.matches( in: input, options: [], range: range )
             return matches.map({
                 (input as NSString).substring(with: $0.range)

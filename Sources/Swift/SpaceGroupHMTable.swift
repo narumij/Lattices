@@ -528,8 +528,6 @@ func spacegroupHMToSymopIndex(_ name:String) -> (Int,Int)? {
         return (16,1)
     case "?":
         return (16,2)
-    case "?":
-        return (16,2)
     case "P 2 2 21":
         return (17,1)
     case "P2221":

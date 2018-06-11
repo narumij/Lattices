@@ -10,9 +10,12 @@ import SceneKit
 
 extension Color {
     var vector4 : SCNVector4 {
-        var v : [ CGFloat ] = [ 0, 0, 0, 0 ]
-        getRed( &v[0], green: &v[1], blue: &v[2], alpha: &v[3] )
-        return SCNVector4( v[0], v[1], v[2], v[3] )
+        var r : CGFloat = 0
+        var g : CGFloat = 0
+        var b : CGFloat = 0
+        var a : CGFloat = 0
+        getRed( &r, green: &g, blue: &b, alpha: &a )
+        return SCNVector4( r, g, b, a )
     }
 }
 

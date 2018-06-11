@@ -211,7 +211,7 @@ CIFLexemeTag CIFLexemeTagCheck( CIFLexemeTag tag, NSString *text )
 
 -(void)nextLexeme:(void*)scanner tag:(CIFLexemeTag)tag text:(NSString*)text
 {
-    NSLog(@"[line:%zd column:%zd] Token (%@) -> (%@) ",cifget_lineno(scanner),cifget_column(scanner),CIFLexemeTagName(tag),text);
+    NSLog(@"[line:%d column:%d] Token (%@) -> (%@) ",cifget_lineno(scanner),cifget_column(scanner),CIFLexemeTagName(tag),text);
 }
 
 @end

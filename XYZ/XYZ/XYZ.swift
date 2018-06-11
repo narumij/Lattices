@@ -40,16 +40,16 @@ struct Regex {
         self.regex = try! NSRegularExpression( pattern: pattern, options: NSRegularExpression.Options.caseInsensitive)
     }
     func isMatch(_ input: String) -> Bool {
-        let inputRange = NSRange(location: 0, length: input.characters.count)
+        let inputRange = NSRange(location: 0, length: input.count)
         return self.regex.numberOfMatches( in: input, options: [], range: inputRange) > 0
     }
     func lengthOfFirstMatch(_ input: String) -> Int {
-        let inputRange = NSRange(location: 0, length: input.characters.count)
+        let inputRange = NSRange(location: 0, length: input.count)
         let range = self.regex.rangeOfFirstMatch( in: input, options: [], range: inputRange)
         return range.length;
     }
     func firstMatch(_ input: String) -> String {
-        let inputRange = NSRange(location: 0, length: input.characters.count)
+        let inputRange = NSRange(location: 0, length: input.count)
         let match = self.regex.firstMatch( in: input, options: [], range: inputRange )
         return (input as NSString).substring(with: match!.range)
     }
