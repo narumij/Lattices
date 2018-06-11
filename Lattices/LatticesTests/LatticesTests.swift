@@ -63,11 +63,11 @@ extension LatticesTests {
         let v1 = normalize(Vector3(1,1,0))
         let v2 = Vector3(0,1,0)
         let v3 = Vector3(-1,0,0)
-        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v2) =~~ FloatType(M_PI_2) )
-        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v1) =~~ FloatType(M_PI_4) )
-        XCTAssert( cell.angle(v2, apexFract: Vector3Zero, toFract: v1) =~~ FloatType(M_PI_4) )
-        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v3) =~~ FloatType(M_PI) )
-        XCTAssert( cell.angle(v2, apexFract: Vector3Zero, toFract: v3) =~~ FloatType(M_PI_2) )
+        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v2) =~~ FloatType(Float.pi / 2) )
+        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v1) =~~ FloatType(Float.pi / 4) )
+        XCTAssert( cell.angle(v2, apexFract: Vector3Zero, toFract: v1) =~~ FloatType(Float.pi / 4) )
+        XCTAssert( cell.angle(v0, apexFract: Vector3Zero, toFract: v3) =~~ FloatType(Float.pi) )
+        XCTAssert( cell.angle(v2, apexFract: Vector3Zero, toFract: v3) =~~ FloatType(Float.pi / 2) )
         func t( _ p:(Vector3,Vector3,Vector3) ) -> Bool {
             return angle(p.0,apex:p.1,to:p.2) =~~ cell.angle(p.0,apexFract:p.1,toFract:p.2)
         }
@@ -96,11 +96,11 @@ extension LatticesTests {
         let v1 = Vector3(1,1,0)
         let v2 = Vector3(0,1,0)
         let v3 = Vector3(-1,0,0)
-        XCTAssert( angle(v0, apex: Vector3Zero, to: v2) =~~ FloatType(M_PI_2) )
-        XCTAssert( angle(v0, apex: Vector3Zero, to: v1) =~~ FloatType(M_PI_4) )
-        XCTAssert( angle(v2, apex: Vector3Zero, to: v1) =~~ FloatType(M_PI_4) )
-        XCTAssert( angle(v0, apex: Vector3Zero, to: v3) =~~ FloatType(M_PI) )
-        XCTAssert( angle(v2, apex: Vector3Zero, to: v3) =~~ FloatType(M_PI_2) )
+        XCTAssert( angle(v0, apex: Vector3Zero, to: v2) =~~ FloatType(Float.pi / 2) )
+        XCTAssert( angle(v0, apex: Vector3Zero, to: v1) =~~ FloatType(Float.pi / 4) )
+        XCTAssert( angle(v2, apex: Vector3Zero, to: v1) =~~ FloatType(Float.pi / 4) )
+        XCTAssert( angle(v0, apex: Vector3Zero, to: v3) =~~ FloatType(Float.pi) )
+        XCTAssert( angle(v2, apex: Vector3Zero, to: v3) =~~ FloatType(Float.pi / 2) )
     }
     func testSymmetryCode() {
         let test = [
@@ -137,7 +137,7 @@ extension LatticesTests {
             let component = str.cifNumericDeviationComponent
             let su = str.cifNumericDeviationNumber
             XCTAssert( component == "1" )
-            XCTAssert( fabs( su! - 0.01 ) < DBL_EPSILON )
+            XCTAssert( fabs( su! - 0.01 ) < .ulpOfOne )
             }()
 
         _ = {
@@ -145,7 +145,7 @@ extension LatticesTests {
             let component = str.cifNumericDeviationComponent
             let su = str.cifNumericDeviationNumber
             XCTAssert( component == "23" )
-            XCTAssert( fabs( su! - 0.23 ) < DBL_EPSILON )
+            XCTAssert( fabs( su! - 0.23 ) < .ulpOfOne )
         }()
 
         _ = {
@@ -153,7 +153,7 @@ extension LatticesTests {
             let component = str.cifNumericDeviationComponent
             let su = str.cifNumericDeviationNumber
             XCTAssert( component == "67" )
-            XCTAssert( fabs( su! - 0.067 ) < DBL_EPSILON )
+            XCTAssert( fabs( su! - 0.067 ) < .ulpOfOne )
         }()
 
 
